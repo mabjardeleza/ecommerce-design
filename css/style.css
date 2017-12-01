@@ -127,6 +127,79 @@ a, a:hover {
 }
 
 /* Shop Page */
+.ShopPage {
+	position: relative;
+	padding: 0;
+}
+
+.ShopPage-intro {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 0;
+	padding: 140px 0 92px 0;
+}
+.ShopPage-title {
+	color: #000;
+	font-family: 'Libre Baskerville', serif;
+	font-size: 60px;
+	font-weight: bold;
+	line-height: 74px;
+	text-align: center;
+	width: 100%;
+	padding-bottom: 23px;
+
+}
+.ShopPage-description {
+	color: #000;
+	font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+	text-align: center;
+	width: 60%;
+}
+.ShopPage-items {
+	position: relative;
+	padding: 0 65px;
+}
+.ShopPage-item {
+	width: 100%;
+}
+.ShopPage-imageContainer--landscape {
+	margin: 65px auto;
+}
+.ShopPage-imageContainer--portrait {
+	max-width: 70%;
+	margin: 0 auto;
+}
+.ShopPage-background-top {
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+.ShopPage-background-bottom {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+.ShopPage-background-image {
+	width: 100%;
+}
+.ShopPage-image {
+	width: 100%;
+	object-fit: contain;
+}
+.ShopPage-items-overlay {
+	position: absolute;
+    top: 130px;
+    left: 18%;
+    z-index: 10;
+}
+.ShopPage-items-overlay-image {
+	width: 35vw;
+	object-fit: contain;
+}
 
 /* Miscellaneous */
 
