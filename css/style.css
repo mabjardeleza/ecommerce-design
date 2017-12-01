@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?Source+Sans+Pro');
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+a, a:hover {
+	text-decoration: none;
+}
+
+.main-container {
+	position: relative;
+}
+
+/* Header */
+
+.navbar {
+	position: fixed;
+    top: 0;
+    width: 100%;
+  	margin: 0;
+  	padding: 0;
+  	overflow: hidden;
+  	background-color: #E97584;
+  	z-index: 999;
+}
+
+.navbar-duplicate {
+
+    width: 100%;
+  	margin: 0;
+  	padding: 0;
+  	overflow: hidden;
+  	background-color: #E97584;
+}
+
+.navbar-list {
+	list-style-type: none;
+	padding: 0 45px;
+}
+
+
+
+.navbar-title, .navbar-title:hover, .navbar-title:active, .navbar-title:focus {
+	color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    line-height: 70px;
+    letter-spacing: 5px;
+    text-decoration: none;
+    padding: 0 25px;
+}
+
+.navbar-item {
+	float: left;
+}
+
+.navbar--right {
+	float: right;
+}
+
+.navbar-item-link, .navbar-item-link:hover, .navbar-item-link:active, .navbar-item-link:focus {
+	display: block;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+/* Footer */
+
+/* Splash Page */
+
+.SplashPage-title {
+	color: #fff;
+	font-family: 'Poppins', sans-serif;
+	font-size: 36px;
+	line-height: 59px;
+	margin: 0 auto;
+	position: absolute;
+	text-align: center;
+	top: 42px;	
+	width: 100%;
+	z-index: 5;
+}
+
+.SplashPage-title-link, .SplashPage-title-link:hover {
+	color: #fff;
+}
+
+.SplashPage-section {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	padding: 0;
+}
+
+.SplashPage-section-title, .SplashPage-section-title:hover {	
+	color: #fff;
+	font-family: 'Libre Baskerville', serif;
+	font-size: 55px;
+	font-weight: bold;
+}
+
+.SplashPage-background {
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.shop-background {
+	background-image: url("../assets/SHOP.png");
+}
+
+.experience-background {
+	background-image: url("../assets/XP.png");
+}
+
+.stay-background {
+	background-image: url("../assets/STAY.png");
+}
+
+/* Shop Page */
+
+/* Miscellaneous */
+
+.remove-padding {
+	padding: 0;
+}
