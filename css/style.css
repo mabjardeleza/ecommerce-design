@@ -24,7 +24,7 @@ a, a:hover, a:focus, a:active {
   	margin: 0;
   	padding: 0;
   	overflow: hidden;
-  	background-color: #E97584;
+  	background-color: #FF967B;
   	z-index: 999;
   	border-radius: 0;
 }
@@ -165,9 +165,9 @@ a, a:hover, a:focus, a:active {
 	margin-top: -10px;
 }
 
-.footer-product-item, 
-.footer-product-item:hover, 
-.footer-product-item:active, 
+.footer-product-item,
+.footer-product-item:hover,
+.footer-product-item:active,
 .footer-product-item:focus {
 	color: #FF967B;
 	font-family: 'Source Sans Pro', sans-serif;
@@ -204,7 +204,7 @@ a, a:hover, a:focus, a:active {
 	margin: 0 auto;
 	position: absolute;
 	text-align: center;
-	top: 42px;	
+	top: 42px;
 	width: 100%;
 	z-index: 5;
 }
@@ -221,7 +221,7 @@ a, a:hover, a:focus, a:active {
 	padding: 0;
 }
 
-.SplashPage-section-title, .SplashPage-section-title:hover {	
+.SplashPage-section-title, .SplashPage-section-title:hover {
 	color: #fff;
 	font-family: 'Libre Baskerville', serif;
 	font-size: 55px;
@@ -273,7 +273,7 @@ a, a:hover, a:focus, a:active {
 	color: #000;
 	font-family: 'Source Sans Pro', sans-serif;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 26px;
 	text-align: center;
 	width: 60%;
 }
@@ -321,7 +321,7 @@ a, a:hover, a:focus, a:active {
 .ShopPage-item-others {
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-end;	
+	justify-content: flex-end;
 }
 .ShopPage-productContainer {
 	margin-top: 90px;
@@ -402,7 +402,7 @@ a, a:hover, a:focus, a:active {
 
 .ProductPage-product-row {
 	display: flex;
-	padding-bottom: 10px;	
+	padding-bottom: 10px;
 }
 
 .ProductPage-product-title {
@@ -457,14 +457,14 @@ a, a:hover, a:focus, a:active {
 .ProductPage-product-button:hover {
 	background: #fff;
 	color: #0D8582;
-	border: 1px solid #0D8582;	
+	border: 1px solid #0D8582;
 }
 
 .ProductPage-suggestions {
 	padding: 20px 68px 60px;
 }
 
-.ProductPage-suggestions-title {	
+.ProductPage-suggestions-title {
 	color: #000;
 	font-family: 'Libre Baskerville', serif;
 	font-size: 25px;
@@ -558,7 +558,7 @@ a, a:hover, a:focus, a:active {
 .CartPage-checkout-button:hover {
 	background: #fff;
 	color: #0D8582;
-	border: 1px solid #0D8582;	
+	border: 1px solid #0D8582;
 }
 
 .CartPage-checkout-subtotal {
@@ -669,7 +669,11 @@ a, a:hover, a:focus, a:active {
 }
 
 .CartPage-suggestions-item {
-	padding: 42px 0;
+	padding: 0 0 42px 0;
+}
+
+.CartPage-suggestions-item:first-of-type {
+	padding: 42px 0 42px 0;
 }
 
 .CartPage-suggestions-item-image {
