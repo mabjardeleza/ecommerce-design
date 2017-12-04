@@ -87,8 +87,9 @@ a, a:hover, a:focus, a:active {
 .banner-title {
 	color: #fff;
 	font-family: 'Libre Baskerville', serif;
-	font-size: 25px;
+	font-size: 32px;
 	font-weight: bold;
+  line-height: 32px;
 	align-self: center;
 }
 
@@ -121,7 +122,9 @@ a, a:hover, a:focus, a:active {
 
 .banner-subscription-submit {
 	border: 1px solid transparent;
+  border-radius: 0;
 	padding: 15px 20px;
+  margin-left: 15px;
 	font-size: 16px;
 	background-color: #008581;
 	color: #fff;
@@ -419,8 +422,11 @@ a, a:hover, a:focus, a:active {
 	font-size: 21px;
 	font-family: 'Source Sans Pro', sans-serif;
 	line-height: 27px;
-	font-weight: bold;
 	padding-right: 5vw;
+}
+
+.ProductPage-product-size {
+  margin-right: 15px;
 }
 
 .ProductPage-product-description {
@@ -541,6 +547,7 @@ a, a:hover, a:focus, a:active {
 .CartPage-checkout-button,
 .CartPage-checkout-button:hover {
 	background: #0D8582;
+  height: 54px;
 	color: #fff;
 	border: 1px solid transparent;
 	padding: 14px 0;
@@ -601,7 +608,7 @@ a, a:hover, a:focus, a:active {
 }
 
 .CartPage-cart-item-title {
-	margin-top: 25px;
+	margin-top: 16px;
 	padding-bottom: 10px;
 	color: #000;
 	font-size: 16px;
@@ -613,9 +620,9 @@ a, a:hover, a:focus, a:active {
 .CartPage-cart-item-description {
 	padding-bottom: 10px;
 	color: #000;
-	font-size: 12px;
+	font-size: 14.8px;
 	font-family: 'Source Sans Pro', sans-serif;
-	line-height: 18px;
+	line-height: 21px;
 }
 
 .CartPage-cart-item-actionContainer {
