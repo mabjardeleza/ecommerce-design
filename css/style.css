@@ -289,10 +289,43 @@ a, a:hover, a:focus, a:active {
 }
 .ShopPage-imageContainer--landscape {
 	margin: 60px auto;
+	position: relative;
+	z-index: 5;
 }
 .ShopPage-imageContainer--portrait {
 	max-width: 70%;
 	margin: 0 auto;
+	position: relative;
+	z-index: 5;
+}
+.ShopPage-image-textContainer {
+	position: absolute;
+	margin: 16px;
+	bottom: 0;
+	left: 0;
+	z-index: 10;
+}
+.ShopPage-image-text {
+	color: #000;
+	font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    font-style: italic;
+    opacity: 0;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.ShopPage-image-text--bold {
+	font-weight: bold;
+}
+.ShopPage-imageContainer--portrait:hover .ShopPage-image-text,
+.ShopPage-imageContainer--landscape:hover .ShopPage-image-text {
+	opacity: 1;
+}
+.ShopPage-imageContainer--landscape:hover,
+.ShopPage-imageContainer--landscape:hover {
+	background: rgba(255,255,255,0.5);
 }
 .ShopPage-background-top {
 	position: absolute;
