@@ -315,6 +315,7 @@ a, a:hover, a:focus, a:active {
 	position: absolute;
     top: 130px;
     left: 18%;
+    pointer-events: none;
     z-index: 10;
 }
 .ShopPage-items-overlay-image {
