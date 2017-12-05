@@ -750,6 +750,64 @@ a, a:hover, a:focus, a:active {
 .CartPage-suggestions-item-image {
 	width: 100%;
 }
+
+/* Experiences Page */
+
+.ExperiencesPage {
+	position: relative;
+	padding: 0;
+}
+.ExperiencesPage-intro {
+	display: flex;
+	flex-direction: column;
+  height: calc(100vh - 70px);
+	align-items: left;
+	justify-content: flex-end;
+	padding: 140px 65px 75px 65px;
+  background: url(../assets/experiences-banner.png);
+  background-size: cover;
+}
+.ExperiencesPage-title {
+	color: #000;
+	font-family: 'Libre Baskerville', serif;
+	font-size: 60px;
+	font-weight: bold;
+	line-height: 74px;
+	text-align: left;
+	width: 100%;
+	padding-bottom: 23px;
+}
+.ExperiencesPage-description {
+	color: #000;
+	font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+	text-align: left;
+	width: 80%;
+}
+
+.ExperiencesPage-product-action {
+	padding-top: 12vh;
+    padding-left: 16px;
+}
+
+.ExperiencesPage-product-button {
+	background: #0D8582;
+	color: #fff;
+	border: 1px solid transparent;
+	width: 200px;
+	padding: 14px 0;
+	font-size: 16px;
+	font-family: 'Source Sans Pro', sans-serif;
+	line-height: 24px;
+	font-weight: 600;
+	display: block;
+	text-align: center;
+	cursor: pointer;
+	-webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
 /* Miscellaneous */
 .col-xs-30,
 .col-sm-30,
