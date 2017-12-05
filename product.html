@@ -17,7 +17,7 @@
 
 </head>
 
-<body id="shop" class="animated fadeIn">
+<body id="shop" class="screen-container animated fadeIn">
 
     <div class="navbar">
         <ul class="navbar-list">
@@ -77,7 +77,7 @@
                         </div>
                     </div>
                     <div class="ProductPage-product-action">
-                        <a href="cart.html" class="ProductPage-product-button">I'll take it</a>
+                        <a class="ProductPage-product-button js-cart-open">I'll take it</a>
                     </div>
                 </div>
             </section>
@@ -98,11 +98,111 @@
                     </div>
                 </div>
                 <div class="ProductPage-suggestions-action">
-                    <a href="cart.html" class="ProductPage-suggestions-button">I'll take it</a>
+                    <a class="ProductPage-suggestions-button js-cart-open">I'll take it</a>
                 </div>
             </section>
         </div>
     </section>
+
+    <div id="sidebar" class="Sidebar animated slideInRight">
+        <div class="Sidebar-cart">
+            <div class="Sidebar-cart-header">
+                <div class="Sidebar-cart-title">YOUR SHOPPING BAG</div>
+            </div>
+            <div class="Sidebar-cart-body">
+                <div class="Sidebar-cart-items">
+                    <div class="Sidebar-cart-item row">
+                        <div class="col-sm-7 Sidebar-cart-item-imageContainer remove-padding">
+                            <img src="assets/cart-item.png" class="Sidebar-cart-item-image">
+                        </div>
+                        <div class="col-sm-5 Sidebar-cart-item-actionContainer remove-padding">
+                            <div class="Sidebar-cart-item-action">
+                                <div class="Sidebar-cart-item-title">
+                                    Apparel Item 1
+                                </div>
+                                <div class="Sidebar-cart-item-buttons">
+                                    <a href="#" class="Sidebar-cart-item-button Sidebar-cart-item-minus">-</a>
+                                    <span href="#" class="Sidebar-cart-item-button Sidebar-cart-item-number">1</span>
+                                    <a href="#" class="Sidebar-cart-item-button Sidebar-cart-item-plus">+</a>
+                                </div>
+                                <div class="Sidebar-cart-item-price">Php 1,199</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Sidebar-cart-item row">
+                        <div class="col-sm-7 Sidebar-cart-item-imageContainer remove-padding">
+                            <img src="assets/cart-item.png" class="Sidebar-cart-item-image">
+                        </div>
+                        <div class="col-sm-5 Sidebar-cart-item-actionContainer remove-padding">
+                            <div class="Sidebar-cart-item-action">
+                                <div class="Sidebar-cart-item-title">
+                                    Apparel Item 1
+                                </div>
+                                <div class="Sidebar-cart-item-buttons">
+                                    <a href="#" class="Sidebar-cart-item-button Sidebar-cart-item-minus">-</a>
+                                    <span href="#" class="Sidebar-cart-item-button Sidebar-cart-item-number">1</span>
+                                    <a href="#" class="Sidebar-cart-item-button Sidebar-cart-item-plus">+</a>
+                                </div>
+                                <div class="Sidebar-cart-item-price">Php 1,199</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Sidebar-cart-item row">
+                        <div class="col-sm-7 Sidebar-cart-item-imageContainer remove-padding">
+                            <img src="assets/cart-item.png" class="Sidebar-cart-item-image">
+                        </div>
+                        <div class="col-sm-5 Sidebar-cart-item-actionContainer remove-padding">
+                            <div class="Sidebar-cart-item-action">
+                                <div class="Sidebar-cart-item-title">
+                                    Apparel Item 1
+                                </div>
+                                <div class="Sidebar-cart-item-buttons">
+                                    <a href="#" class="Sidebar-cart-item-button Sidebar-cart-item-minus">-</a>
+                                    <span href="#" class="Sidebar-cart-item-button Sidebar-cart-item-number">1</span>
+                                    <a href="#" class="Sidebar-cart-item-button Sidebar-cart-item-plus">+</a>
+                                </div>
+                                <div class="Sidebar-cart-item-price">Php 1,199</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Sidebar-cart-item row">
+                        <div class="col-sm-7 Sidebar-cart-item-imageContainer remove-padding">
+                            <img src="assets/cart-item.png" class="Sidebar-cart-item-image">
+                        </div>
+                        <div class="col-sm-5 Sidebar-cart-item-actionContainer remove-padding">
+                            <div class="Sidebar-cart-item-action">
+                                <div class="Sidebar-cart-item-title">
+                                    Apparel Item 1
+                                </div>
+                                <div class="Sidebar-cart-item-buttons">
+                                    <a href="#" class="Sidebar-cart-item-button Sidebar-cart-item-minus">-</a>
+                                    <span href="#" class="Sidebar-cart-item-button Sidebar-cart-item-number">1</span>
+                                    <a href="#" class="Sidebar-cart-item-button Sidebar-cart-item-plus">+</a>
+                                </div>
+                                <div class="Sidebar-cart-item-price">Php 1,199</div>
+                            </div>
+                        </div>
+                    </div>                    
+                    <div class="Sidebar-cart-buttonContainer">
+                        <a href="shop.html" class="Sidebar-cart-button">Shop</a>
+                    </div>
+                </div>
+                <div class="Sidebar-checkout">
+                    <div class="Sidebar-checkout-subtotal">
+                        <div class="Sidebar-checkout-subtotal-label">Subtotal</div>
+                        <div class="Sidebar-checkout-subtotal-price">Php 1,199</div>
+                    </div>
+                    <div class="Sidebar-checkout-note">
+                        Shipping will be calculated at checkout
+                    </div>
+                    <div class="Sidebar-checkout-buttonContainer">
+                        <a href="cart.html" class="Sidebar-checkout-button">Checkout</a>
+                    </div>                
+                </div>
+            </div>
+            
+        </div>
+    </div>
     <div class="banner-footer">
         <div class="banner-title">Follow the Flock</div>
         <div class="banner-description">Stay updated on all our newest products, latest news and promos by signing up for our monthly newsletter.</div>
@@ -135,6 +235,8 @@
         </div>
     </div>
 
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
