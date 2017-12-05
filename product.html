@@ -35,7 +35,7 @@
         </ul>
     </div>
 
-	<section>
+    <section>
         <div class="navbar-duplicate">
             <ul class="navbar-list">
                 <li class="navbar-item"><a href="homepage.html" class="navbar-title">PIOPIO</a></li>
@@ -85,16 +85,16 @@
                 <div class="ProductPage-suggestions-title">Imagine yourself in these</div>
                 <div class="ProductPage-suggestions-gallery row">
                     <div class="ProductPage-gallery-item col-md-3">
-                        <img src="assets/gallery-image.png" class="ProductPage-gallery-image" alt="img">
+                        <img src="assets/gallery-image.png" onclick="openModal();currentSlide(1)" class="ProductPage-gallery-image" alt="Chic">
                     </div>
                     <div class="ProductPage-gallery-item col-md-3">
-                        <img src="assets/gallery-image.png" class="ProductPage-gallery-image" alt="img">
+                        <img src="assets/portrait.png" onclick="openModal();currentSlide(2)" class="ProductPage-gallery-image" alt="Glam">
                     </div>
                     <div class="ProductPage-gallery-item col-md-3">
-                        <img src="assets/gallery-image.png" class="ProductPage-gallery-image" alt="img">
+                        <img src="assets/gallery-image.png" onclick="openModal();currentSlide(3)" class="ProductPage-gallery-image" alt="Culture">
                     </div>
                     <div class="ProductPage-gallery-item col-md-3">
-                        <img src="assets/gallery-image.png" class="ProductPage-gallery-image" alt="img">
+                        <img src="assets/portrait.png" onclick="openModal();currentSlide(4)" class="ProductPage-gallery-image" alt="Sense">
                     </div>
                 </div>
                 <div class="ProductPage-suggestions-action">
@@ -103,6 +103,40 @@
             </section>
         </div>
     </section>
+
+    <div id="lightbox" class="lightbox">
+      <span class="closeButton cursor js-close" onclick="closeModal()">&times;</span>
+      <div class="lightbox-content">
+
+        <div class="lightbox-slideContainer">
+
+            <div class="prev" onclick="plusSlides(-1)">
+                <i class="fa fa-chevron-left" aria-hidden="true"></i>
+            </div>
+
+            <div class="slide">
+              <img src="assets/gallery-image.png" class="lightbox-slide-image">
+            </div>
+
+            <div class="slide">
+              <img src="assets/portrait.png" class="lightbox-slide-image">
+            </div>
+
+            <div class="slide">
+              <img src="assets/gallery-image.png" class="lightbox-slide-image">
+            </div>
+
+            <div class="slide">
+              <img src="assets/portrait.png" class="lightbox-slide-image">
+            </div>
+
+            
+            <div class="next" onclick="plusSlides(1)">
+                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+            </div>
+        </div>
+      </div>
+    </div>
 
     <div id="sidebar" class="Sidebar animated slideInRight">
         <div class="Sidebar-cart">
