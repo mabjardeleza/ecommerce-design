@@ -808,6 +808,41 @@ a, a:hover, a:focus, a:active {
     transition: all 0.5s ease;
 }
 
+/* Stay Page */
+
+.StayPage {
+	position: relative;
+	padding: 0;
+}
+.StayPage-intro {
+	display: flex;
+	flex-direction: column;
+  height: calc(100vh - 70px);
+	align-items: left;
+	justify-content: flex-end;
+	padding: 140px 65px 75px 65px;
+  background: url(../assets/stay-banner.png);
+  background-size: cover;
+}
+.StayPage-title {
+	color: #FFF;
+	font-family: 'Libre Baskerville', serif;
+	font-size: 60px;
+	font-weight: bold;
+	line-height: 74px;
+	text-align: left;
+	width: 100%;
+	padding-bottom: 23px;
+}
+.StayPage-description {
+	color: #FFF;
+	font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+	text-align: left;
+	width: 80%;
+}
+
 /* Miscellaneous */
 .col-xs-30,
 .col-sm-30,
