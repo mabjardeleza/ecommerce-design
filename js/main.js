@@ -22,34 +22,33 @@ $(document).on('click', '.js-cart-open', function() {
 
 // Lightbox from W3 Schools 
 // https://www.w3schools.com/howto/howto_js_lightbox.asp
-// TODO: convert to jquery
-
-function openModal() {
-  document.getElementById('lightbox').style.display = "flex";
-}
-
-function closeModal() {
-  document.getElementById('lightbox').style.display = "none";
-}
 
 var slideIndex = 1;
-showSlides(slideIndex);
+var slides = document.getElementsByClassName("slide");
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+$(document).on('click', '.ProductPage-gallery-image', function() {
+    var slideIndex = $(this).data('lightbox-target') - 1;
+    showSlides(slideIndex);
+    $('#lightbox').css('display', 'flex');
+});
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+$(document).on('click', '.js-lightbox-close', function() {
+    $('#lightbox').css('display', 'none');
+});
+
+$(document).on('click', '.js-lightbox-prev', function() {
+    slideIndex > 0 ? slideIndex-- : slideIndex = slides.length-1;
+    showSlides(slideIndex);
+});
+
+$(document).on('click', '.js-lightbox-next', function() {
+    slideIndex < slides.length-1 ? slideIndex++ : slideIndex = 0;
+    showSlides(slideIndex);
+});
 
 function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("slide");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slides[slideIndex-1].style.display = "block";
+    slideIndex = n;
+    $('.slide').each(function(i) {
+        i == slideIndex ? $(this).show() : $(this).hide();
+    });
 }

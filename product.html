@@ -85,16 +85,16 @@
                 <div class="ProductPage-suggestions-title">Imagine yourself in these</div>
                 <div class="ProductPage-suggestions-gallery row">
                     <div class="ProductPage-gallery-item col-md-3">
-                        <img src="assets/gallery-image.png" onclick="openModal();currentSlide(1)" class="ProductPage-gallery-image" alt="Chic">
+                        <img src="assets/gallery-image.png" class="ProductPage-gallery-image" data-lightbox-target="1" alt="Chic">
                     </div>
                     <div class="ProductPage-gallery-item col-md-3">
-                        <img src="assets/portrait.png" onclick="openModal();currentSlide(2)" class="ProductPage-gallery-image" alt="Glam">
+                        <img src="assets/portrait.png" class="ProductPage-gallery-image" data-lightbox-target="2" alt="Glam">
                     </div>
                     <div class="ProductPage-gallery-item col-md-3">
-                        <img src="assets/gallery-image.png" onclick="openModal();currentSlide(3)" class="ProductPage-gallery-image" alt="Culture">
+                        <img src="assets/gallery-image.png" class="ProductPage-gallery-image" data-lightbox-target="3" alt="Culture">
                     </div>
                     <div class="ProductPage-gallery-item col-md-3">
-                        <img src="assets/portrait.png" onclick="openModal();currentSlide(4)" class="ProductPage-gallery-image" alt="Sense">
+                        <img src="assets/portrait.png" class="ProductPage-gallery-image" data-lightbox-target="4" alt="Sense">
                     </div>
                 </div>
                 <div class="ProductPage-suggestions-action">
@@ -105,12 +105,12 @@
     </section>
 
     <div id="lightbox" class="lightbox">
-      <span class="closeButton cursor js-close" onclick="closeModal()">&times;</span>
+      <span class="closeButton cursor js-lightbox-close">&times;</span>
       <div class="lightbox-content">
 
         <div class="lightbox-slideContainer">
 
-            <div class="prev" onclick="plusSlides(-1)">
+            <div class="prev js-lightbox-prev">
                 <i class="fa fa-chevron-left" aria-hidden="true"></i>
             </div>
 
@@ -131,7 +131,7 @@
             </div>
 
             
-            <div class="next" onclick="plusSlides(1)">
+            <div class="next js-lightbox-next">
                 <i class="fa fa-chevron-right" aria-hidden="true"></i>
             </div>
         </div>
