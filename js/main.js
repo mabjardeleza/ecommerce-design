@@ -20,6 +20,11 @@ $(document).on('click', '.js-cart-open', function() {
     }
 });
 
+$(document).on('click', '.js-choose-variant', function() {
+    $('.ProductPage-product-size.selected').removeClass('selected');
+    $(this).addClass('selected');
+});
+
 // Lightbox from W3 Schools 
 // https://www.w3schools.com/howto/howto_js_lightbox.asp
 

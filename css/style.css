@@ -483,6 +483,11 @@ a, a:hover, a:focus, a:active {
 
 .ProductPage-product-size {
   margin-right: 15px;
+  cursor: pointer;
+}
+
+.ProductPage-product-size.selected {
+	font-weight: bold;
 }
 
 .ProductPage-product-description {
