@@ -304,27 +304,36 @@ a, a:hover, a:focus, a:active {
 }
 .ShopPage-image-textContainer {
 	position: absolute;
-	margin: 16px;
+	padding: 16px;
 	bottom: 0;
 	left: 0;
 	z-index: 10;
+	width: 100%;
+	height: 50%;
+	background: transparent; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(transparent, #FF967B); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(transparent, #FF967B); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(transparent, #FF967B); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(transparent, #FF967B); /* Standard syntax */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .ShopPage-image-text {
-	color: #000;
+	color: #fff;
 	font-family: 'Source Sans Pro', sans-serif;
-    font-size: 16px;
-    line-height: 22px;
-    font-style: italic;
-    opacity: 0;
-    -webkit-transition: all 0.2s ease;
-    transition: all 0.2s ease;
+  font-size: 16px;
+  line-height: 22px;
+  font-style: italic;
 }
-
 .ShopPage-image-text--bold {
 	font-weight: bold;
 }
-.ShopPage-imageContainer--portrait:hover .ShopPage-image-text,
-.ShopPage-imageContainer--landscape:hover .ShopPage-image-text {
+.ShopPage-imageContainer--portrait:hover .ShopPage-image-textContainer,
+.ShopPage-imageContainer--landscape:hover .ShopPage-image-textContainer {
 	opacity: 1;
 }
 .ShopPage-background-top {
@@ -345,9 +354,16 @@ a, a:hover, a:focus, a:active {
 	object-fit: contain;
   transition: 0.3s;
 }
-.ShopPage-image:hover {
+.ShopPage-imageContainer--portrait:hover .ShopPage-image, 
+.ShopPage-imageContainer--portrait:hover .ShopPage-image-textContainer,
+.ShopPage-imageContainer--landscape:hover .ShopPage-image, 
+.ShopPage-imageContainer--landscape:hover .ShopPage-image-textContainer {
   transform: scale(1.05);
   transition: 0.3s;
+}
+.ShopPage-imageContainer--portrait:hover .ShopPage-image-textContainer,
+.ShopPage-imageContainer--landscape:hover .ShopPage-image-textContainer {
+	transform-origin: top;
 }
 .ShopPage-items-overlay {
 	position: absolute;
@@ -1002,6 +1018,8 @@ a, a:hover, a:focus, a:active {
 .Sidebar-cart-item-action {
 	float: right;
     align-self: center;
+    width: 100%;
+    padding: 0 5px;
 }
 
 .Sidebar-cart-item-buttons {
@@ -1015,11 +1033,13 @@ a, a:hover, a:focus, a:active {
     line-height: 24px;
     align-self: center;
     display: flex;
+    margin: 0 auto;
 }
 
 .Sidebar-cart-item-button {
 	width: 33.333%;
 	text-align: center;
+	cursor: pointer;
 }
 
 .Sidebar-cart-item-price {
@@ -1116,6 +1136,7 @@ a, a:hover, a:focus, a:active {
 	display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 20;
 }
 
 .prev {
