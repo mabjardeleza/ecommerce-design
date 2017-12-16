@@ -25,21 +25,11 @@ $(document).on('click', '.js-choose-variant', function() {
     $(this).addClass('selected');
 });
 
-// Lightbox from W3 Schools 
-// https://www.w3schools.com/howto/howto_js_lightbox.asp
+// Carousel
 
-var slideIndex = 1;
-var slides = document.getElementsByClassName("slide");
-
-$(document).on('click', '.ProductPage-gallery-image', function() {
-    var slideIndex = $(this).data('lightbox-target') - 1;
-    showSlides(slideIndex);
-    $('#lightbox').css('display', 'flex');
-});
-
-$(document).on('click', '.js-lightbox-close', function() {
-    $('#lightbox').css('display', 'none');
-});
+var slideIndex = 0;
+var slides = document.getElementsByClassName("ProductPage-banner-image");
+changeSlides(slideIndex);
 
 $(document).on('click', '.js-lightbox-prev', function() {
     slideIndex > 0 ? slideIndex-- : slideIndex = slides.length-1;
@@ -48,12 +38,45 @@ $(document).on('click', '.js-lightbox-prev', function() {
 
 $(document).on('click', '.js-lightbox-next', function() {
     slideIndex < slides.length-1 ? slideIndex++ : slideIndex = 0;
-    showSlides(slideIndex);
+    changeSlides(slideIndex);
 });
 
-function showSlides(n) {
+function changeSlides(n) {
     slideIndex = n;
-    $('.slide').each(function(i) {
+    $('.ProductPage-banner-image').each(function(i) {
         i == slideIndex ? $(this).show() : $(this).hide();
     });
 }
+
+// Lightbox from W3 Schools 
+// https://www.w3schools.com/howto/howto_js_lightbox.asp
+
+// var slideIndex = 1;
+// var slides = document.getElementsByClassName("slide");
+
+// $(document).on('click', '.ProductPage-gallery-image', function() {
+//     var slideIndex = $(this).data('lightbox-target') - 1;
+//     showSlides(slideIndex);
+//     $('#lightbox').css('display', 'flex');
+// });
+
+// $(document).on('click', '.js-lightbox-close', function() {
+//     $('#lightbox').css('display', 'none');
+// });
+
+// $(document).on('click', '.js-lightbox-prev', function() {
+//     slideIndex > 0 ? slideIndex-- : slideIndex = slides.length-1;
+//     showSlides(slideIndex);
+// });
+
+// $(document).on('click', '.js-lightbox-next', function() {
+//     slideIndex < slides.length-1 ? slideIndex++ : slideIndex = 0;
+//     showSlides(slideIndex);
+// });
+
+// function showSlides(n) {
+//     slideIndex = n;
+//     $('.slide').each(function(i) {
+//         i == slideIndex ? $(this).show() : $(this).hide();
+//     });
+// }
