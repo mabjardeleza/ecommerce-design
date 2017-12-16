@@ -808,7 +808,7 @@ a, a:hover, a:focus, a:active {
   	background-size: cover;
 }
 .ExperiencesPage-title {
-	color: #000;
+	color: #fff;
 	font-family: 'Libre Baskerville', serif;
 	font-size: 60px;
 	font-weight: bold;
@@ -818,7 +818,7 @@ a, a:hover, a:focus, a:active {
 	padding-bottom: 23px;
 }
 .ExperiencesPage-description {
-	color: #000;
+	color: #fff;
 	font-family: 'Source Sans Pro', sans-serif;
     font-size: 16px;
     line-height: 26px;
@@ -836,6 +836,22 @@ a, a:hover, a:focus, a:active {
 	color: #fff;
 	border: 1px solid transparent;
 	width: 200px;
+	padding: 14px 0;
+	font-size: 16px;
+	font-family: 'Source Sans Pro', sans-serif;
+	line-height: 24px;
+	font-weight: 600;
+	display: block;
+	text-align: center;
+	cursor: pointer;
+	-webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.ExperiencesPage-product-button:hover {
+	background: #fff;
+	color: #0D8582;
+	border: 1px solid #0D8582;
 }
 
 /* Stay Page */
@@ -871,6 +887,10 @@ a, a:hover, a:focus, a:active {
     line-height: 26px;
 	text-align: left;
 	width: 80%;
+}
+.StayPage-product-action {
+	padding-top: 12vh;
+    padding-left: 16px;
 }
 
 /* Sidebar */
