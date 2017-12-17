@@ -596,6 +596,10 @@ a, a:hover, a:focus, a:active {
 	border: 1px solid transparent;
 }
 
+.ProductPage-imageContainer {
+	max-width: 100%;
+}
+
 /* Cart */
 .CartPage-row {
 	display: flex;
