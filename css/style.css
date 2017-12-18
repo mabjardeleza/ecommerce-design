@@ -1236,6 +1236,7 @@ a, a:hover, a:focus, a:active {
 	max-height: 80vh;
 }
 
+
 /* The Close Button */
 .closeButton {
   color: white;
@@ -1251,35 +1252,40 @@ a, a:hover, a:focus, a:active {
   margin: 0 auto;
 }
 
+.carousel-controls {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	display: flex;
+}
+
 /* Next & previous buttons */
 .prev,
 .next,
 .closeButton {
 	cursor: pointer;
-	width: 40px;
-	height: 40px;
+	width: 50px;
+	height: 50px;
 	color: white;
 	font-weight: bold;
 	font-size: 20px;
 	line-height: 20px;
 	transition: 0.6s ease;
-	border-radius: 50%;
 	user-select: none;
 	-webkit-user-select: none;
 	display: flex;
   align-items: center;
   justify-content: center;
   z-index: 20;
-  position: absolute;
-  top: 48%;
+  background-color: #008581;
 }
 
 .prev {
-	left: 0;
+	margin: 20px 5px 20px 20px;
 }
 
 .next {
-	right: 0;
+	margin: 20px 20px 20px 5px;
 }
 
 /* Miscellaneous */

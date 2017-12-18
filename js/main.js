@@ -33,7 +33,7 @@ changeSlides(slideIndex);
 
 $(document).on('click', '.js-lightbox-prev', function() {
     slideIndex > 0 ? slideIndex-- : slideIndex = slides.length-1;
-    showSlides(slideIndex);
+    changeSlides(slideIndex);
 });
 
 $(document).on('click', '.js-lightbox-next', function() {
