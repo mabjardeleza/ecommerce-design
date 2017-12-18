@@ -25,6 +25,11 @@ $(document).on('click', '.js-choose-variant', function() {
     $(this).addClass('selected');
 });
 
+$(document).on('click', '.js-choose-swatch', function() {
+    $('.ProductPage-product-swatch.selected').removeClass('selected');
+    $(this).addClass('selected');
+});
+
 // Carousel
 
 var slideIndex = 0;
