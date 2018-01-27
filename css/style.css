@@ -793,9 +793,6 @@ a, a:hover, a:focus, a:active {
 }
 
 .CartPage-suggestions-image-text {
-
-}
-.CartPage-suggestions-image-text {
 	color: #000;
 	font-family: 'Source Sans Pro', sans-serif;
     font-size: 16px;
@@ -812,6 +809,14 @@ a, a:hover, a:focus, a:active {
 	opacity: 1;
 }
 .CartPage-suggestions-item-image {
+	width: 100%;
+}
+.CartPage-message--empty {
+	color: #000;
+	font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+	text-align: center;
 	width: 100%;
 }
 
@@ -1112,6 +1117,10 @@ a, a:hover, a:focus, a:active {
 	font-family: 'Source Sans Pro', sans-serif;
 	line-height: 14px;
 	float: right;
+}
+.Sidebar-cart-emptyMessage {
+	text-align: center;
+	margin: 0 auto;
 }
 
 /* Contact Page */
