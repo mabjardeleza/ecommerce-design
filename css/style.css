@@ -277,6 +277,8 @@ a, a:hover, a:focus, a:active {
 	justify-content: center;
 	padding: 0;
 	padding: 140px 0 75px 0;
+	position: relative;
+	z-index: 10;
 }
 .ShopPage-title {
 	color: #000;
@@ -291,8 +293,8 @@ a, a:hover, a:focus, a:active {
 .ShopPage-description {
 	color: #000;
 	font-family: 'Source Sans Pro', sans-serif;
-    font-size: 16px;
-    line-height: 26px;
+  font-size: 16px;
+  line-height: 26px;
 	text-align: center;
 	width: 60%;
 }
@@ -352,6 +354,7 @@ a, a:hover, a:focus, a:active {
 	position: absolute;
 	top: 0;
 	width: 100%;
+	pointer-events: none;
 }
 .ShopPage-background-bottom {
 	position: absolute;
