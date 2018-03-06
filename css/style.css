@@ -230,7 +230,6 @@ a, a:hover, a:focus, a:active {
 	text-align: center;
 	width: 100%;
 	z-index: 5;
-	padding-bottom: 20px;
 }
 
 .SplashPage-title-link, .SplashPage-title-link:hover {
@@ -249,7 +248,7 @@ a, a:hover, a:focus, a:active {
 	line-height: 74px;
 	text-align: center;
 	width: 100%;
-	padding-bottom: 25px;
+	padding: 1vh;
 }
 .SplashPage-description {
 	color: #000;
