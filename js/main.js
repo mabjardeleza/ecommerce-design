@@ -37,7 +37,6 @@ var page = 'ProductPage';
 if ($('.ExperiencesPage').length) {
     page = 'ExperiencesPage';
 }
-console.log(page);
 var slides = document.getElementsByClassName(page + "-banner-image");
 changeSlides(slideIndex);
 
