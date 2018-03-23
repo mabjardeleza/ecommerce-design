@@ -33,7 +33,12 @@ $(document).on('click', '.js-choose-swatch', function() {
 // Carousel
 
 var slideIndex = 0;
-var slides = document.getElementsByClassName("ProductPage-banner-image");
+var page = 'ProductPage';
+if ($('.ExperiencesPage').length) {
+    page = 'ExperiencesPage';
+}
+console.log(page);
+var slides = document.getElementsByClassName(page + "-banner-image");
 changeSlides(slideIndex);
 
 $(document).on('click', '.js-lightbox-prev', function() {
@@ -48,7 +53,7 @@ $(document).on('click', '.js-lightbox-next', function() {
 
 function changeSlides(n) {
     slideIndex = n;
-    $('.ProductPage-banner-image').each(function(i) {
+    $('.' + page + '-banner-image').each(function(i) {
         i == slideIndex ? $(this).show() : $(this).hide();
     });
 }
